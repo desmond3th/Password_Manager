@@ -210,8 +210,8 @@ class PasswordManager implements ActionListener {
                 AccAddBtn.addActionListener(e4 -> {
                     try {
                         if (AccAddBtn == e4.getSource()) {
-                            String account_name = tAcc.getText(); // get the account name form textField
-                            String acc_pass = tPass.getText(); // get the password from textField
+                            String account_name = tAcc.getText(); 
+                            String acc_pass = tPass.getText(); 
                             if (!account_name.isEmpty() && !acc_pass.isEmpty()) {
                                 data.add_Acc(account_name, acc_pass);
                                 JOptionPane.showMessageDialog(conn2, "Account is added !");
@@ -222,7 +222,7 @@ class PasswordManager implements ActionListener {
                             }
                         }
                     } catch (Exception ex) {
-                        JOptionPane.showMessageDialog(conn2, ex.getMessage()); // catching the exception message, the one we have explicitly thrown.
+                        JOptionPane.showMessageDialog(conn2, ex.getMessage());
                     }
                 });
             }
