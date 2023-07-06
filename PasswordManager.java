@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.HashMap;
 
 
-// Using inbuilt hashMap to store account and password.
+// Using hashMap to store account and password.
 class HashtablePassword {
     private final HashMap<Object, Object> map; 
     private final float loadFactor; 
@@ -30,7 +30,7 @@ class HashtablePassword {
     }
 }
 
-// Generating Random password and using stringBuilder to concatenate the password string.
+// Generating passwords randomly and using StringBuilder to concatenate the password string.
 class PasswordGenerator {
     private static final Random random = new Random();
     private static final String caps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -90,7 +90,7 @@ class PasswordManager implements ActionListener {
         btn.setFont(fn);
     }
 
-    /****** Inner GUI of STORE PASSWORD, this will execute when we click on that button ******/
+    /****** Inner GUI of STORE PASSWORD, this will execute when we click on STORE PASSWORD button ******/
     public void StoringGUI() {
         frame2 = new JFrame("Store Password Here");
         frame2.setBounds(1400, 300, 800, 500);
@@ -136,7 +136,7 @@ class PasswordManager implements ActionListener {
         GUIButtonsSetting(AccAddBtn);
     }
 
-    // This text area will be used by password generator and search password result. 
+    // This text area will be used by the password generator and search password results. 
     public void textArea(String Pass, JTextArea TA) {
         TA.setText(Pass);
         Font fn = new Font("Roboto", Font.BOLD, 20);
